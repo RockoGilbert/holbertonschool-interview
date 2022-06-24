@@ -24,4 +24,3 @@ def minOperations(n):
         actions['paste'] += 1
         currentCharacters += copiedCharacters
     return sum(actions.values())
-    
