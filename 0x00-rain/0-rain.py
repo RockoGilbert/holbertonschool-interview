@@ -16,3 +16,4 @@ def rain(walls):
         # Add difference between smaller wall and current wall
         amount += min(before, after) - height
     return amount
+    
