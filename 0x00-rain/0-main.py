@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-0_main
-"""
+""" 0_main file to run and get output"""
 rain = __import__('0-rain').rain
 
 if __name__ == "__main__":
