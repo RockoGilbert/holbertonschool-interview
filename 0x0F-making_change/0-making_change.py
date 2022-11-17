@@ -1,10 +1,4 @@
 #!/usr/bin/python3
-"""
-makeChange function determines the fewest number of coins needed
-to meet a given amount <total>
-"""
-
-
 def makeChange(coins, total):
     """
     Prototype: def makeChange(coins, total):
@@ -19,15 +13,25 @@ def makeChange(coins, total):
       if total can be met: return the minimum number of coins needed
         to meet total.
     """
-    coins.sort(reverse=True)
-    count = 0
-    for coin in coins:
-        if total >= coin:
-            count += total // coin
-            total %= coin
-    if total == 0:
-        return count
+
+    
     if total <= 0:
         return 0
+
+    coins.sort(reverse=True)
+    stack = total
+    mv = 0
+    cnt = 0
+
+    while (mv < len(coins)):
+        if stack == 0:
+            return cnt
+
+        if coins[mv] > stack:
+            mv += 1
+
+        else:
+            stack -= coins[mv]
+            cnt += 1
+
     return -1
-    
