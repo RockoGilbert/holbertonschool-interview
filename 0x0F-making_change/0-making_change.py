@@ -1,9 +1,5 @@
-#!/usr/bin/
-""" 0-main.py """
-
-
-
-
+#!/usr/bin/python3
+""" 0-main """
 def makeChange(coins, total):
     """
     Prototype: def makeChange(coins, total):
@@ -19,7 +15,7 @@ def makeChange(coins, total):
         to meet total.
     """
 
-
+    
     if total <= 0:
         return 0
 
