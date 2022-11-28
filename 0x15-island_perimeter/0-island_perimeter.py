@@ -31,7 +31,4 @@ def island_perimeter(grid):
                 if j > 0 and grid[i][j - 1] == 1:
                     perimeter -= 2
     return perimeter
-<<<<<<< HEAD
     
-=======
->>>>>>> 901672072be6f556af12656c4fc1160542d764cb
