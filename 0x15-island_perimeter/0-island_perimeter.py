@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+Task 0. Island Perimeter
+"""
+
 def island_perimeter(grid):
 
     perimeter = 0
